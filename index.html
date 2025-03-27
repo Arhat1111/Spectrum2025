@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arhat Shah - Spectrum website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="navbar">
+    <div class="nav-container">
+        <a href="#" class="logo">Arhat Shah</a>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#project">Projects</a>
+            <a href="#contact">Feedback</a>
+        </div>
+    </div>
+</nav>
+
+<script>
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+
+    hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+        hamburger.classList.toggle('active');
+    });
+</script>
+
+    <!-- Home page -->
+     <section id="home">
+     </section>
+     <style>
+        #home{
+            height: 100vh;
+            background: url(spectrum-website-home.png);
+            background-size: cover;
+            background-attachment: fixed;
+        }
+     </style>
+
+    <!-- About page -->
+    <section class="about" id="about">
+        <div class="responsive-container-block bigContainer">
+            <div class="responsive-container-block Container">
+            <p class="text-blk heading">
+                About Me
+            </p>
+            <p class="text-blk subHeading">
+                Hello, I am Arhat Shah, a Grade 10 student at MLC. Since Grade 7, I have been deeply inspired by technology and artificial intelligence, which led me to explore the world of coding. My passion for programming has driven me to learn various coding languages, including Python, Python with prompt engineering, HTML, CSS, JavaScript, and C++. Along with coding, I have also gained experience in web development and design, app development, and game development.
+                <br><br> My main project at MLC focuses on web development and design, where I have completed two internships and am currently working with clients from around the world. I have collaborated with clients from India, Canada, the USA, Saudi Arabia, and Dubai, helping them build and enhance their digital presence. I am always eager to expand my knowledge, take on new challenges, and create innovative solutions through technology.
+
+
+            </p>
+            <div class="social-icons-container">
+                <h3 style="margin-top: 5px;">My insta profile:</h3>
+                <a class="social-icon" href="https://www.instagram.com/a2_web_developer1081/" target="_blank">
+                <img class="socialIcon image-block" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/bb35.png">
+                </a>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project page -->
+     <section id="project" style="height: 100vh;">
+        <!-- <style>
+            #project{
+                background: url(spectrum-website-home.png);
+                background-size: cover;
+                background-attachment: fixed;
+            }
+        </style> -->
+
+        <div class="project">
+            <div class="box">
+                <h2>1</h2><br><br><br><br><br>
+                <h3>Web Development and designing</h3><br>
+                <p>During this web development project, I learned essential technologies like HTML, CSS, and JavaScript to build and style interactive websites. I also explored WordPress and worked with tools like Elementor and WPBakery. Using Visual Studio Code (VSCode), I improved my coding workflow and debugging skills. This experience helped me understand both front-end and back-end development concepts, enhancing my ability to design responsive and user-friendly websites efficiently.
+
+
+
+                </p>
+            </div>
+
+            <div class="box">
+                <h2>2</h2><br><br><br><br><br>
+                <h3>Prompt engineering with Python</h3><br>
+                <p>During this project on Prompt Engineering with Python, I explored techniques to craft effective prompts for AI models, optimizing their responses for various applications. I learned how to structure prompts strategically to improve accuracy, clarity, and relevance in AI-generated outputs. Where for the same I integrated the prompt engineering with python to make the product more efficiant and reliable.</p>
+            </div>
+
+            <div class="box">
+                <h2>3</h2><br><br><br><br><br>
+                <h3>Table Tennis</h3><br><br>
+                <p>During my Table Tennis Project, I focused on improving my skills, techniques, and overall understanding of the game.</p>
+                <li>Attended Bhavnagar state compitition 2024</li>
+                <li>Got 3rd position in Inter school team event 2024</li>
+                <li>Got 3rd position in Inter house individual event 2024</li>
+                <li>Got 1st position in Inter school team event 2025</li>
+                <li>Got 3rd position in Inter house individual event 2025</li>
+                <li>Got 5th position and made it to surat rural team in khelmahakumb 2025</li>
+            </div>
+        </div>
+
+        <style>
+            #project{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-width: 100vh;
+                background: linear-gradient(black,black 50%,#fff 50%);
+            }
+            .project{
+                width: 1100px;
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+            }
+            .project .box{
+                position: relative;
+                width: 320px;
+                background: #fff;
+                padding: 100px 40px 60px;
+                box-shadow: 0 15px 45px rgba(0,0,0,.1);
+            }
+            .project .box:before{
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                transform: scaleY(0);
+                transform-origin: top;
+                transition: transform 0.5s;
+            }
+            .project .box:hover:before{
+                transform: scaleY(1);
+                transform-origin: bottom;
+                transition: transform 0.5s;
+            }
+            .project .box h2{
+                position: absolute;
+                left: 40px;
+                right: 60px;
+                font-size: 4em;
+                z-index: 1;
+                opacity: 0.5;
+                transition: 0.5s;
+                margin-top: 15px;
+            }
+            .project .box h2:hover{
+                opacity: 1;
+                color: #fff;
+                transform: translateY(-40px);
+            }
+            .project .box h3{
+                position: relative;
+                font-size: 1.5em;
+                z-index: 2;
+                color: #333;
+                transition: 0.5s;
+            }
+            .project .box h3:hover{
+                color: #fff;
+            }
+            .project .box p{
+                position: relative;
+                z-index: 2;
+                color: #555;
+                transition: 0.5s;
+            }
+            .project .box:hover h3
+            .project .box p{
+                color: #fff;
+            }
+        </style>
+     </section>
+
+    <!-- Contact page -->
+    
+    <center>
+    <section id="contact" style="height: 50vh;">
+    <div class="responsive-container-block bigContainer">
+        <br>
+        <div id="feedback" class="feedback-container">
+            <strong>How satisfied are you with my<br/>presentation and my journey this year?</strong>
+              <div class="ratings-container">
+                <div class="rating">
+                  <img src="https://img.icons8.com/external-neu-royyan-wijaya/64/000000/external-emoji-neumojis-smiley-neu-royyan-wijaya-17.png" alt="">
+                  <small>unsatisfied</small>
+                </div>
+                <div class="rating"><img src="https://img.icons8.com/external-neu-royyan-wijaya/64/000000/external-emoji-neumojis-smiley-neu-royyan-wijaya-3.png" alt=""/>
+                  <small>Neutral</small>
+                </div>
+                <div class="rating active"><img src="https://img.icons8.com/external-neu-royyan-wijaya/64/000000/external-emoji-neumojis-smiley-neu-royyan-wijaya-30.png" alt=""/>
+                  <small>Happy</small>
+                </div>
+              </div>
+        
+              <button class="btn" id="send">Send Review</button>
+            </div>
+        </div>
+    </center
+    >
+
+
+            <script>
+                const ratings = document.querySelectorAll('.rating')
+const ratingsContainer = document.querySelector('.ratings-container')
+const sendBtn = document.querySelector('#send')
+const feedback = document.querySelector('#feedback')
+let selectedRating = 'Satisfied'
+ratingsContainer.addEventListener('click', (e) => {
+    if(e.target.parentNode.classList.contains('rating') && e.target.nextElementSibling) {
+        removeActive()
+        e.target.parentNode.classList.add('active')
+        selectedRating = e.target.nextElementSibling.innerHTML
+    } else if(
+        e.target.parentNode.classList.contains('rating') &&
+        e.target.previousSibling &&
+        e.target.previousElementSibling.nodeName === 'IMG'
+    ) {
+        removeActive()
+        e.target.parentNode.classList.add('active')
+        selectedRating = e.target.innerHTML
+    }
+})
+sendBtn.addEventListener('click', (e) => {
+    feedback.innerHTML = `
+        <i class="fas fa-heart">❤️</i>
+        <strong>Thank You!</strong>
+        <br>
+        <strong>Feedback: ${selectedRating}</strong>
+<p>I'll use your feedback to improve My slef. Thanks a lot for your feedback</p>`
+});
+function removeActive() {
+    for(let i = 0; i < ratings.length; i++) {
+        ratings[i].classList.remove('active');
+    }
+ }
+            </script>
+     </section>     
+</body>
+</html>
